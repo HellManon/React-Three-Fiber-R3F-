@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
+import BackgroundCanvas from "../components/background/BackgroundCanvas";
 
 
 function MainLayout() {
     return (
         <>
-            <h1>Layout</h1>
-
+            <BackgroundCanvas />
             <Outlet />
         </>
     );
