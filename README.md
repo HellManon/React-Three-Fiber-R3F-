@@ -1,42 +1,16 @@
-# React-Three-Fiber-R3F-
+# React + Vite
 
-Projet d'apprentissage de React Three Fiber servant de prototype pour le futur portfolio.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Objectifs
+Currently, two official plugins are available:
 
-- Découvrir React Three Fiber
-- Manipuler React Router
-- Créer une interface de navigation immersive
-- Intégrer un chatbot
-- Préparer l'architecture du futur portfolio
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Technologies
+## React Compiler
 
-- Node.js
-- React
-- React Router
-- React Three Fiber
-- Three.js
-- Vite
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Installation
+## Expanding the ESLint configuration
 
-```bash
-npm install
-```
-
-## Lancement
-
-```bash
-npm run dev
-```
-
-## Build
-
-```bash
-npm run build
-```
-
-## Auteur
-
-Manon Hell
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
