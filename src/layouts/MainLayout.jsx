@@ -5,7 +5,7 @@ import BackgroundCanvas from "../components/background/BackgroundCanvas";
 function MainLayout() {
     return (
         <>
-            <BackgroundCanvas />
+            <BackgroundCanvas />        
             <Outlet />
         </>
     );

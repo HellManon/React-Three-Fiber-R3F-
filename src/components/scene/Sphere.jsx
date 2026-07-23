@@ -1,7 +1,7 @@
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 
-export default function Cube({
+export default function Sphere({
     position = [0, 0, 0],
     rotation = [0, 0, 0],
     rotationSpeed = [0, 0, 0],
@@ -9,24 +9,23 @@ export default function Cube({
     color = "green",
 }) {
 
-    const cubeRef = useRef();
+    const sphereRef = useRef();
 
     useFrame((state, delta) => {
-    cubeRef.current.rotation.x += rotationSpeed[0] * delta;
-    cubeRef.current.rotation.y += rotationSpeed[1] * delta;
-    cubeRef.current.rotation.z += rotationSpeed[2] * delta;
+    sphereRef.current.rotation.x += rotationSpeed[0] * delta;
+    sphereRef.current.rotation.y += rotationSpeed[1] * delta;
+    sphereRef.current.rotation.z += rotationSpeed[2] * delta;
 });
 
     return (
         <mesh
-            ref={cubeRef}
+            ref={sphereRef}
             position={position}
             rotation={rotation}
-            rotationSpeed={rotationSpeed}
             scale={scale}
             castShadow
         >
-            <boxGeometry />
+            <sphereGeometry args={[0.5, 32, 32]}  /> 
             <meshStandardMaterial color={color} />
         </mesh>
     );
